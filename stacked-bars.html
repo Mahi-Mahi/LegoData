@@ -54,7 +54,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("legosets.csv", function(error, source) {
+d3.csv("legosets-ok.csv", function(error, source) {
 
   var themes = d3.set(source.map(function(d) {
     return d.Theme;
